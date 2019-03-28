@@ -28,9 +28,9 @@
     <link rel="stylesheet" href="css/azia.css">
 
   </head>
-  <body class="az-body az-body-sidebar">
+  <body class="az-body az-body-sidebar az-body-dashboard-nine">
 
-    <div class="az-sidebar">
+    <div class="az-sidebar az-sidebar-sticky az-sidebar-indigo-dark">
       <div class="az-sidebar-header">
         <a href="index.html" class="az-logo">logo</a>
       </div><!-- az-sidebar-header -->
@@ -38,35 +38,32 @@
         <div class="az-img-user online"><img src="img/img1.jpg" alt=""></div>
         <div class="media-body">
           <h6>Jane Doe</h6>
-          <span>Premium Member</span>
         </div><!-- media-body -->
       </div><!-- az-sidebar-loggedin -->
       <div class="az-sidebar-body">
         <ul class="nav">
           <li class="nav-label">Main Menu</li>
-          <li class="nav-item">
-            <a href="dashboard.php" class="nav-link"><i class="typcn typcn-clipboard"></i>Dashboard</a>
-          </li><!-- nav-item -->
           <li class="nav-item active">
+            <a href="dashboard.php" class="nav-link with-sub"><i class="typcn typcn-clipboard"></i>Dashboard</a>
+          </li><!-- nav-item -->
+          <li class="nav-item">
             <a href="user.php" class="nav-link"><i class="typcn typcn-document"></i>User Management</a>
           </li><!-- nav-item -->
           <li class="nav-item">
             <a href="#" class="nav-link with-sub"><i class="typcn typcn-book"></i>Queries</a>
             <ul class="nav-sub">
-              <li class="nav-sub-item"><a href="elem-accordion.html" class="nav-sub-link">Create Query</a></li>
-              <li class="nav-sub-item"><a href="elem-accordion.html" class="nav-sub-link">Manage Queries</a></li>
+              <li class="nav-sub-item"><a href="create.php" class="nav-sub-link">Create New</a></li>
             </ul>
           </li><!-- nav-item -->
-          <li class="nav-item">
-            <a href="#" class="nav-link with-sub"><i class="typcn typcn-archive"></i>Settings</a>
-            <ul class="nav-sub">
-              <li class="nav-sub-item"><a href="#" class="nav-sub-link">Change Password</a></li>
-              <li class="nav-sub-item"><a href="#" class="nav-sub-link">Edit Profile</a></li>
 
+          <li class="nav-item">
+            <a href="#" class="nav-link with-sub"><i class="typcn typcn-tabs-outline"></i>Settings</a>
+            <ul class="nav-sub">
+              <li class="nav-sub-item"><a href="profile.php" class="nav-sub-link">Profile</a></li>
             </ul>
           </li><!-- nav-item -->
           <li class="nav-item">
-            <a href="login.php" class="nav-link with-sub"><i class="typcn typcn-archive"></i>Sign Out</a>
+            <a href="#" class="nav-link"><i class="typcn typcn-archive"></i>LogOut</a>
           </li><!-- nav-item -->
         </ul><!-- nav -->
       </div><!-- az-sidebar-body -->
@@ -75,7 +72,12 @@
     <div class="az-content az-content-dashboard-two">
       <div class="az-header">
         <div class="container-fluid">
+           <div class="az-header-left">
+            <a href="#" id="azSidebarToggle" class="az-header-menu-icon"><span></span></a>
+          </div><!-- az-header-left -->
+          
           <div class="az-header-right">
+
           </div><!-- az-header-right -->
         </div><!-- container -->
       </div><!-- az-header -->
@@ -107,60 +109,107 @@
 
       <div class="az-content-body">
 
-        <div class="row row-sm mg-b-20">
-          <div class="col-lg-9">
-            <div class="row row-sm">
-              <div class="col-md-6">
-                <div class="card card-dashboard-nine">
-                  <div class="card-header">
-                    <h6 class="az-content-label">Estimated Unique Impressions</h6>
-                    <h1 class="card-title">321,212</h1>
-                    <small class="az-content-text">The estimated number of unique people that see the ad over the past 30 days.</small>
-                  </div><!-- card-header -->
-                  <div class="bar-chart"><canvas id="chartBar1"></canvas></div>
-                </div><!-- card -->
-              </div>
-              <div class="col-md-6 mg-t-20 mg-md-t-0">
-                <div class="card card-dashboard-nine">
-                  <div class="card-header">
-                    <h6 class="az-content-label">Estimated Unique Clicks</h6>
-                    <h1 class="card-title">305,294</h1>
-                    <small class="az-content-text">The estimated number of clicks for the ad over the past 30 days. A click is... <a href="#">Learn more</a></small>
-                  </div><!-- card-header -->
-                  <div class="bar-chart"><canvas id="chartBar2"></canvas></div>
-                </div><!-- card -->
-              </div>
-            </div><!-- row -->
-          </div><!-- col -->
-          <div class="col-lg-3 mg-t-20 mg-lg-t-0">
-            <div class="card card-dashboard-ten bg-purple">
-              <h6 class="az-content-label">Popularity</h6>
-              <div class="card-body">
-                <div>
-                  <h6>1,137</h6>
-                  <label>Global Rank</label>
-                </div>
-                <div>
-                  <h6>953</h6>
-                  <label>US Rank</label>
-                </div>
-              </div><!-- card-body -->
-            </div><!-- card -->
-            <div class="card card-dashboard-ten bg-primary">
-              <h6 class="az-content-label">Search Traffic</h6>
-              <div class="card-body">
-                <div>
-                  <h6>26.5<span class="percent">%</span></h6>
-                  <label>Search Visits</label>
-                </div>
-                <div>
-                  <h6>10.6<span class="percent">%</span></h6>
-                  <label>Unique Visits</label>
-                </div>
-              </div><!-- card-body -->
-            </div><!-- card -->
-          </div>
-        </div><!-- row -->
+          <div class="row row-sm mg-b-20">
+            <div class="col-lg-6 ht-lg-100p mg-b-10">
+              <div class="card card-dashboard-one">
+                <div class="card-header">
+                  <div>
+                    <h4 class="card-title">#Brexit</h4>
+
+                  </div>
+                  <div class="btn-group">
+                    <a href="view.php" class="btn btn-outline-indigo btn-block">View</a>
+                  </div>
+                </div><!-- card-header -->
+                <div class="card-body">
+                  <div class="card-body-top">
+                    <div>
+                      <label class="mg-b-0">Total Mentions</label>
+                      <h2>13,956</h2>
+                    </div>
+                  </div><!-- card-body-top -->
+                  <div class="flot-chart-wrapper">
+                    <div id="flotChart1a" class="flot-chart"></div>
+                  </div><!-- flot-chart-wrapper -->
+                </div><!-- card-body -->
+              </div><!-- card -->
+            </div><!-- col -->
+
+            <div class="col-lg-6 ht-lg-100p mg-b-10">
+              <div class="card card-dashboard-one">
+                <div class="card-header">
+                  <div>
+                    <h4 class="card-title">Nike vs Adidas</h4>
+                  </div>
+                  <div class="btn-group">
+                    <a href="view-multiple.php" class="btn btn-outline-indigo btn-block">View</a>
+                  </div>
+
+                </div><!-- card-header -->
+                <div class="card-body">
+                  <div class="card-body-top">
+                    <div>
+                      <label class="mg-b-0">Total Mentions</label>
+                      <h2>13,956</h2>
+                    </div>
+                  </div><!-- card-body-top -->
+                  <div class="flot-chart-wrapper">
+                    <div id="flotChart1b" class="flot-chart"></div>
+                  </div><!-- flot-chart-wrapper -->
+                </div><!-- card-body -->
+              </div><!-- card -->
+            </div><!-- col -->
+
+            <div class="col-lg-6 ht-lg-100p mg-b-10">
+              <div class="card card-dashboard-one">
+                <div class="card-header">
+                  <div>
+                    <h4 class="card-title">@realdonaldtrump</h4>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-outline-indigo btn-block">View</a>
+                  </div>
+                </div><!-- card-header -->
+                <div class="card-body">
+                  <div class="card-body-top">
+                    <div>
+                      <label class="mg-b-0">Total Mentions</label>
+                      <h2>13,956</h2>
+                    </div>
+                  </div><!-- card-body-top -->
+                  <div class="flot-chart-wrapper">
+                    <div id="flotChart1c" class="flot-chart"></div>
+                  </div><!-- flot-chart-wrapper -->
+                </div><!-- card-body -->
+              </div><!-- card -->
+            </div><!-- col -->
+
+            <div class="col-lg-6 ht-lg-100p mg-b-10">
+              <div class="card card-dashboard-one">
+                <div class="card-header">
+                  <div>
+                    <h4 class="card-title">Capitalism vs Socialism</h4>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-outline-indigo btn-block">View</a>
+                  </div>
+                </div><!-- card-header -->
+                <div class="card-body">
+                  <div class="card-body-top">
+                    <div>
+                      <label class="mg-b-0">Total Mentions</label>
+                      <h2>13,956</h2>
+                    </div>
+                  </div><!-- card-body-top -->
+                  <div class="flot-chart-wrapper">
+                    <div id="flotChart1d" class="flot-chart"></div>
+                  </div><!-- flot-chart-wrapper -->
+                </div><!-- card-body -->
+              </div><!-- card -->
+            </div><!-- col -->
+
+          </div><!-- row -->
+
 
         <div class="row row-sm mg-b-15 mg-sm-b-20">
                       <div class="col-md-12">
@@ -172,31 +221,25 @@
                 <div class="media">
                   <div class="media-icon bg-purple"><i class="typcn typcn-ticket"></i></div>
                   <div class="media-body">
-                    <label>Mentions</label>
+                    <label>Total Mentions</label>
                     <h4>3,375</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
                 <div class="media">
                   <div class="media-icon bg-teal"><i class="typcn typcn-ticket"></i></div>
                   <div class="media-body">
-                    <label>Number of Tweets</label>
+                    <label>Total Number of Tweets</label>
                     <h4>16,625</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
-                <div class="media">
-                  <div class="media-icon bg-primary"><i class="typcn typcn-chart-area-outline"></i></div>
-                  <div class="media-body">
-                    <label>Net Revenue</label>
-                    <h4><span>$</span>20,832</h4>
-                  </div><!-- media-body -->
-                </div><!-- media -->
+
 
               </div><!-- sales-overview -->
             </div><!-- card-header -->
             <div class="card-body">
               <div class="chart-legend">
-                <div><span class="bg-indigo"></span>Adidas</div>
-                <div><span class="bg-teal-b"></span> Nike</div>
+                <div><span class="bg-indigo"></span>Mentions</div>
+                <div><span class="bg-teal-b"></span> Tweets</div>
               </div><!-- chart-legend -->
               <div class="chart-wrapper">
                 <div id="flotChart" class="flot-chart"></div>
@@ -273,7 +316,7 @@
       </div><!-- az-content-body -->
       <div class="az-footer ht-40">
         <div class="container-fluid pd-t-0-f ht-100p">
-          <span>&copy; 2019 </span>
+          <span>&copy; 2019 | <a href="#">Privacy Policy </a></span>
         </div><!-- container -->
       </div><!-- az-footer -->
     </div><!-- az-content -->
@@ -305,6 +348,151 @@
           showOtherMonths: true,
           selectOtherMonths: true,
           dateFormat: 'yy-mm-dd'
+        });
+
+       /* Flotcharts */
+        var plot = $.plot('#flotChart1a', [{
+          data: flotSampleData3,
+          color: '#007bff',
+          lines: {
+            fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }]}
+          }
+        }], {
+          series: {
+            shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 8
+          },
+          yaxis: {
+            show: true,
+            min: 0,
+            max: 100,
+            ticks: [[0,''],[20,'20K'],[40,'40K'],[60,'60K'],[80,'80K']],
+            tickColor: '#eee'
+          },
+          xaxis: {
+            show: true,
+            color: '#fff',
+            ticks: [[25,'OCT 21'],[75,'OCT 22'],[100,'OCT 23'],[125,'OCT 24']],
+          }
+        });
+
+        var plot = $.plot('#flotChart1b', [{
+          data: flotSampleData3,
+          color: '#fd7e14',
+          lines: {
+            fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }]}
+          }
+        },{
+          data: flotSampleData4,
+          color: '#dc3545',
+          lines: {
+            fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }]}
+          }
+        }], {
+          series: {
+            shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 8
+          },
+          yaxis: {
+            show: true,
+            min: 0,
+            max: 100,
+            ticks: [[0,''],[20,'20K'],[40,'40K'],[60,'60K'],[80,'80K']],
+            tickColor: '#eee'
+          },
+          xaxis: {
+            show: true,
+            color: '#fff',
+            ticks: [[25,'OCT 21'],[75,'OCT 22'],[100,'OCT 23'],[125,'OCT 24']],
+          }
+        });
+
+        var plot = $.plot('#flotChart1c', [{
+          data: flotSampleData3,
+          color: ' #00cccc',
+          lines: {
+            fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }]}
+          }
+        }], {
+          series: {
+            shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 8
+          },
+          yaxis: {
+            show: true,
+            min: 0,
+            max: 100,
+            ticks: [[0,''],[20,'20K'],[40,'40K'],[60,'60K'],[80,'80K']],
+            tickColor: '#eee'
+          },
+          xaxis: {
+            show: true,
+            color: '#fff',
+            ticks: [[25,'OCT 21'],[75,'OCT 22'],[100,'OCT 23'],[125,'OCT 24']],
+          }
+        });
+
+        var plot = $.plot('#flotChart1d', [{
+          data: flotSampleData3,
+          color: '#007bff',
+          lines: {
+            fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }]}
+          }
+        },{
+          data: flotSampleData4,
+          color: '#3bb001',
+          lines: {
+            fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }]}
+          }
+        }], {
+          series: {
+            shadowSize: 0,
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true
+            }
+          },
+          grid: {
+            borderWidth: 0,
+            labelMargin: 8
+          },
+          yaxis: {
+            show: true,
+            min: 0,
+            max: 100,
+            ticks: [[0,''],[20,'20K'],[40,'40K'],[60,'60K'],[80,'80K']],
+            tickColor: '#eee'
+          },
+          xaxis: {
+            show: true,
+            color: '#fff',
+            ticks: [[25,'OCT 21'],[75,'OCT 22'],[100,'OCT 23'],[125,'OCT 24']],
+          }
         });
 
         /* Sentiment chart */
@@ -434,104 +622,7 @@
         });
         /** CHARTS **/
 
-        var ctx1 = document.getElementById('chartBar1').getContext('2d');
-        new Chart(ctx1, {
-          type: 'bar',
-          data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-            datasets: [{
-              data: [12, 25, 20, 32, 25, 18],
-              backgroundColor: '#560bd0'
-            }, {
-              data: [22, 30, 25, 30, 20, 25],
-              backgroundColor: '#cad0e8'
-            }]
-          },
-          options: {
-            maintainAspectRatio: false,
-            responsive: true,
-            legend: {
-              display: false,
-                labels: {
-                  display: false
-                }
-            },
-            scales: {
-              yAxes: [{
-                display: false,
-                ticks: {
-                  beginAtZero: false,
-                  fontSize: 10,
-                  max: 60,
-                  padding: 0
-                }
-              }],
-              xAxes: [{
-                gridLines: {
-                  display: true,
-                  borderDash: [10, 4],
-                  color: '#ced4da',
-                  drawBorder: false
-                },
-                barPercentage: 0.6,
-                ticks: {
-                  beginAtZero:true,
-                  fontSize: 11,
-                  fontFamily: 'Arial'
-                }
-              }]
-            }
-          }
-        });
-
-        var ctx2 = document.getElementById('chartBar2').getContext('2d');
-        new Chart(ctx2, {
-          type: 'bar',
-          data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-            datasets: [{
-              data: [20, 25, 32, 18, 25, 23],
-              backgroundColor: '#3295ff'
-            }, {
-              data: [22, 30, 25, 30, 20, 30],
-              backgroundColor: '#00cccc'
-            }]
-          },
-          options: {
-            maintainAspectRatio: false,
-            responsive: true,
-            legend: {
-              display: false,
-                labels: {
-                  display: false
-                }
-            },
-            scales: {
-              yAxes: [{
-                display: false,
-                ticks: {
-                  beginAtZero: false,
-                  fontSize: 10,
-                  max: 60,
-                  padding: 0
-                }
-              }],
-              xAxes: [{
-                gridLines: {
-                  borderDash: [10, 4],
-                  color: '#ced4da',
-                  drawBorder: false
-                },
-                barPercentage: 0.6,
-                ticks: {
-                  beginAtZero:true,
-                  fontSize: 11,
-                  fontFamily: 'Arial'
-                }
-              }]
-            }
-          }
-        });
+ 
 
       });
     </script>

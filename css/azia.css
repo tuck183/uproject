@@ -46,7 +46,9 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
+.color-primary {
+  color: #3366ff !important;
+}
 *,
 *::before,
 *::after {
@@ -16229,7 +16231,7 @@ body {
   border-color: #cdd4e0;
   box-shadow: 0 0 10px rgba(28, 39, 60, 0.1); }
   .card-dashboard-twelve .card-header {
-    background-color: transparent;
+    background-color: #ffffff;
     border-bottom: 1px solid #e3e7ed;
     padding: 20px; }
   .card-dashboard-twelve .card-title {
@@ -18057,7 +18059,7 @@ body {
       left: 0; } }
 
 .az-sidebar-indigo-dark {
-  background-color: #4130c5;
+  background-color: #141414;
   border-right-width: 0; }
   .az-sidebar-indigo-dark .az-logo {
     color: #fff;
@@ -18221,7 +18223,7 @@ body {
 .card-dashboard-twentyone {
   position: relative; }
   .card-dashboard-twentyone .card-body {
-    background-color: #f4f5f8;
+    background-color: #ffffff;
     padding: 20px;
     height: 100%; }
     .card-dashboard-twentyone .card-body .az-content-label, .card-dashboard-twentyone .card-body .card-table-two .card-title, .card-table-two .card-dashboard-twentyone .card-body .card-title, .card-dashboard-twentyone .card-body .card-dashboard-eight .card-title, .card-dashboard-eight .card-dashboard-twentyone .card-body .card-title {

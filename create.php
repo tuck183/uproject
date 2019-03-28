@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome | User Management</title>
+    <title>Welcome | Create Query</title>
 
     <!-- vendor css -->
     <link href="lib/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -47,10 +47,10 @@
           <li class="nav-item">
             <a href="dashboard.php" class="nav-link"><i class="typcn typcn-clipboard"></i>Dashboard</a>
           </li><!-- nav-item -->
-          <li class="nav-item active">
-            <a href="user.php" class="nav-link with-sub"><i class="typcn typcn-document"></i>User Management</a>
-          </li><!-- nav-item -->
           <li class="nav-item">
+            <a href="user.php" class="nav-link"><i class="typcn typcn-document"></i>User Management</a>
+          </li><!-- nav-item -->
+          <li class="nav-item active show">
             <a href="#" class="nav-link with-sub"><i class="typcn typcn-book"></i>Queries</a>
             <ul class="nav-sub">
               <li class="nav-sub-item"><a href="create.php" class="nav-sub-link">Create New</a></li>
@@ -80,11 +80,10 @@
 
       <div class="az-content-header d-block d-md-flex">
         <div>
-          <h2 class="az-content-title tx-24 mg-b-5 mg-b-lg-8">User Management</h2>
+          <h2 class="az-content-title tx-24 mg-b-5 mg-b-lg-8">Create Query</h2>
           <div class="az-content-breadcrumb mg-t-15">
             <span>Home</span>
-            <span>Dashboard</span>
-            <span>All Users</span>
+            <span>Create Query</span>
           </div>
         </div>
         <div class="az-dashboard-header-right">
@@ -103,65 +102,78 @@
       </div><!-- az-content-header -->
 
      <div class="az-content-body">
-          <div class="mg-b-20">
-            <div class="col-lg-12">
 
-            <table id="example2" class="table">
-              <thead>
-                <tr>
-                  <th class="wd-20p">Name</th>
-                  <th class="wd-25p">Organization</th>
-                  <th class="wd-20p">Email</th>
-                  <th class="wd-20p"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td>VaultNoir</td>
-                  <td>john@doe.com</td>
-                  <td>        
-                <select class="form-control select2-no-search">
-                <option value="">Choose One</option>
-                <option value=""  data-toggle="modal" data-target="#modaldemo2">Approve</option>
-                <option value="" data-toggle="modal" data-target="#modaldemo1">Delete</option>
+            <div class="az-content-breadcrumb mg-t-15">
+              <span>Insert Primary Handle</span>
+            </div>
+            <div class="row row-xs mg-b-10">
+              <input type="hidden" name="count" value="1" />
+              <div class="col-md-6 control-group" id="fields">
+                <div class=" controls" id="profs">
+                  <form class="input-append">
+                    <div id="input-group field">
+                      <input class="form-control" id="field1" name="prof1" type="text" placeholder="" data-items="8"/>
+                      <button id="b1" class="btn btn-indigo add-more" type="button">+</button>
+                    </div>
+                  </form>
+                </div>
+              </div> <!-- control group -->
+            </div> <!-- row -->
+
+            <div class="row row-xs mg-b-10">
+              <div class="col-md-6">
+                <div class="az-form-group">
+                  <label class="form-label">Start Date</label>
+            <div class="input-group">
+              <input type="text" class="form-control fc-datepicker" placeholder="MM/DD/YYYY">
+            </div>
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+
+             <div class="col-md-6">
+                <div class="az-form-group">
+                  <label class="form-label">End Date</label>
+            <div class="input-group">
+              <input type="text" class="form-control fc-datepicker" placeholder="MM/DD/YYYY">
+            </div>
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+            </div><!-- row -->
+
+          <div class="row row-sm mg-b-20">
+            <div class="col-lg-6">
+              <p class="mg-b-10">Select Country</p>
+              <select class="form-control select2-no-search">
+                <option label="Choose one"></option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Safari">Safari</option>
+                <option value="Opera">Opera</option>
               </select>
-            </td>
-                </tr>
-                <tr>
-                  <td>Garrett Winters</td>
-                  <td>VaultNoir</td>
-                  <td>john@doe.com</td>
-                  <td>        
-                <select class="form-control select2-no-search">
-                <option value="">Choose One</option>
-                <option value=""  data-toggle="modal" data-target="#modaldemo2">Approve</option>
-                <option value="" data-toggle="modal" data-target="#modaldemo1">Delete</option>
-              </select>
-            </td>
-                </tr>
-                <tr>
-                  <td>Ashton Cox</td>
-                  <td>VaultNoir</td>
-                  <td>john@doe.com</td>
-                  <td>        
-                <select class="form-control select2-no-search">
-                <option value="">Choose One</option>
-                <option value=""  data-toggle="modal" data-target="#modaldemo2">Approve</option>
-                <option value="" data-toggle="modal" data-target="#modaldemo1">Delete</option>
-              </select>
-            </td>
-                </tr>
+            </div><!-- col -->
 
+              <div class="col-md-6">
+                <div class="az-form-group">
+                  <label class="form-label">City</label>
+                  <input type="email" class="form-control" placeholder="" value="">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+            </div><!-- row -->
 
+          <div class="row row-sm mg-b-10">
+            <div class="col-md-12">
+                <div class="az-form-group">
+                  <label class="form-label">Context</label>
+            <div class="input-group">
+              <textarea rows="3" class="form-control"></textarea>
+            </div>
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+          </div>
 
-              </tbody>
-            </table>
-        </div>  <!-- row -->
-      </div> <!-- column -->
-
-
-
+          <div class="row row-xs wd-xl-80p">
+            <div class="col-sm-6 col-md-3"><button class="btn btn-az-primary btn-block">Create Query</button></div>
+          </div><!-- row -->
 
 
       </div><!-- az-content-body -->
@@ -211,34 +223,52 @@
 
 
     <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery-ui/ui/widgets/datepicker.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/ionicons/ionicons.js"></script>
+    <script src="lib/jquery.maskedinput/jquery.maskedinput.js"></script>
+    <script src="lib/spectrum-colorpicker/spectrum.js"></script>
     <script src="lib/select2/js/select2.min.js"></script>
+    <script src="lib/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="lib/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
+    <script src="lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
+    <script src="lib/pickerjs/picker.min.js"></script>
 
     <script src="js/azia.js"></script>
     <script>
 
       $(function(){
         'use strict'
-        $('#example2').DataTable({
-          // responsive: true,
-          language: {
-            searchPlaceholder: 'Search...',
-            sSearch: '',
-            lengthMenu: '_MENU_ items/page',
-          }
+        // Datepicker
+        $('.fc-datepicker').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true
         });
 
-          $('.select2').select2({
-            placeholder: 'Choose one'
-          });
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="form-control" id="field' + next + '" name="field' + next + '" type="text">';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
 
-
-        // Select2
-        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
 
       });
     </script>

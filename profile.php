@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome | User Management</title>
+    <title>Welcome | Profile</title>
 
     <!-- vendor css -->
     <link href="lib/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -47,8 +47,8 @@
           <li class="nav-item">
             <a href="dashboard.php" class="nav-link"><i class="typcn typcn-clipboard"></i>Dashboard</a>
           </li><!-- nav-item -->
-          <li class="nav-item active">
-            <a href="user.php" class="nav-link with-sub"><i class="typcn typcn-document"></i>User Management</a>
+          <li class="nav-item">
+            <a href="user.php" class="nav-link"><i class="typcn typcn-document"></i>User Management</a>
           </li><!-- nav-item -->
           <li class="nav-item">
             <a href="#" class="nav-link with-sub"><i class="typcn typcn-book"></i>Queries</a>
@@ -57,7 +57,7 @@
             </ul>
           </li><!-- nav-item -->
 
-          <li class="nav-item">
+          <li class="nav-item active show">
             <a href="#" class="nav-link with-sub"><i class="typcn typcn-tabs-outline"></i>Settings</a>
             <ul class="nav-sub">
               <li class="nav-sub-item"><a href="profile.php" class="nav-sub-link">Profile</a></li>
@@ -80,11 +80,10 @@
 
       <div class="az-content-header d-block d-md-flex">
         <div>
-          <h2 class="az-content-title tx-24 mg-b-5 mg-b-lg-8">User Management</h2>
+          <h2 class="az-content-title tx-24 mg-b-5 mg-b-lg-8">User Profile</h2>
           <div class="az-content-breadcrumb mg-t-15">
             <span>Home</span>
-            <span>Dashboard</span>
-            <span>All Users</span>
+            <span>Profile</span>
           </div>
         </div>
         <div class="az-dashboard-header-right">
@@ -103,66 +102,71 @@
       </div><!-- az-content-header -->
 
      <div class="az-content-body">
-          <div class="mg-b-20">
-            <div class="col-lg-12">
+      <div class="row row-sm">
+        <div class="col-lg-8">
+          <div class="row row-sm mg-b-20">
+              <div class="col-md-6">
+                <div class="az-form-group">
+                  <label class="form-label">Full Name</label>
+                  <input type="email" class="form-control" placeholder="" value="John Doe">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
 
-            <table id="example2" class="table">
-              <thead>
-                <tr>
-                  <th class="wd-20p">Name</th>
-                  <th class="wd-25p">Organization</th>
-                  <th class="wd-20p">Email</th>
-                  <th class="wd-20p"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td>VaultNoir</td>
-                  <td>john@doe.com</td>
-                  <td>        
-                <select class="form-control select2-no-search">
-                <option value="">Choose One</option>
-                <option value=""  data-toggle="modal" data-target="#modaldemo2">Approve</option>
-                <option value="" data-toggle="modal" data-target="#modaldemo1">Delete</option>
-              </select>
-            </td>
-                </tr>
-                <tr>
-                  <td>Garrett Winters</td>
-                  <td>VaultNoir</td>
-                  <td>john@doe.com</td>
-                  <td>        
-                <select class="form-control select2-no-search">
-                <option value="">Choose One</option>
-                <option value=""  data-toggle="modal" data-target="#modaldemo2">Approve</option>
-                <option value="" data-toggle="modal" data-target="#modaldemo1">Delete</option>
-              </select>
-            </td>
-                </tr>
-                <tr>
-                  <td>Ashton Cox</td>
-                  <td>VaultNoir</td>
-                  <td>john@doe.com</td>
-                  <td>        
-                <select class="form-control select2-no-search">
-                <option value="">Choose One</option>
-                <option value=""  data-toggle="modal" data-target="#modaldemo2">Approve</option>
-                <option value="" data-toggle="modal" data-target="#modaldemo1">Delete</option>
-              </select>
-            </td>
-                </tr>
+              <div class="col-md-6">
+                <div class="az-form-group">
+                  <label class="form-label">Organization</label>
+                  <input type="email" class="form-control" placeholder="" value="VaultNoir Limited">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+            </div><!-- row -->
+
+          <div class="row row-sm mg-b-20">
+              <div class="col-md-12">
+                <div class="az-form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="" value="JohnDoe@vaultnoir.com">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+            </div><!-- row -->
+
+          <div class="row row-xs wd-xl-80p">
+            <div class="col-sm-6 col-md-3"><button class="btn btn-az-primary btn-block">Save</button></div>
+          </div><!-- row -->
+        </div><!-- col -->
 
 
 
-              </tbody>
-            </table>
-        </div>  <!-- row -->
-      </div> <!-- column -->
+        <div class="col-lg-4">
+          <div class="row row-sm mg-b-20">
+              <div class="col-md-12  mg-b-10">
+                <div class="az-form-group">
+                  <label class="form-label">Old Password</label>
+                  <input type="password" class="form-control" placeholder="" value="John">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
 
+              <div class="col-md-12 mg-b-10">
+                <div class="az-form-group">
+                  <label class="form-label">New Password</label>
+                  <input type="Password" class="form-control" placeholder="" value="VaultNoir">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
 
+              <div class="col-md-12">
+                <div class="az-form-group">
+                  <label class="form-label">Re-type New Password</label>
+                  <input type="Password" class="form-control" placeholder="" value="VaultNoir">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
 
+            </div><!-- row -->
 
+          <div class="row row-xs">
+            <div class="col-sm-12 col-md-12"><button class="btn btn-az-primary btn-block" data-toggle="modal" data-target="#modaldemo2">Change Password</button></div>
+          </div><!-- row -->
+        </div><!-- col -->
+
+</div>
 
       </div><!-- az-content-body -->
       <div class="az-footer ht-40">
@@ -171,27 +175,6 @@
         </div><!-- container -->
       </div><!-- az-footer -->
     </div><!-- az-content -->
-
-    <!-- BASIC MODAL -->
-    <div id="modaldemo1" class="modal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content modal-content-demo">
-          <div class="modal-header">
-            <h6 class="modal-title">Alert</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h6>Are you sure you want to delete this user?</h6>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-indigo">Yes, Delete</button>
-            <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div><!-- modal-dialog -->
-    </div><!-- modal -->
 
     <div id="modaldemo2" class="modal">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -202,7 +185,7 @@
             </button>
             <i class="icon ion-ios-checkmark-circle-outline tx-100 tx-success lh-1 mg-t-20 d-inline-block"></i>
             <h4 class="tx-success tx-semibold mg-b-20">Congratulations!</h4>
-            <p class="mg-b-20 mg-x-20">User has been activated successfully</p>
+            <p class="mg-b-20 mg-x-20">Your password has been changed successfully</p>
             <button type="button" class="btn btn-success pd-x-25" data-dismiss="modal" aria-label="Close">Continue</button>
           </div><!-- modal-body -->
         </div><!-- modal-content -->
@@ -211,34 +194,52 @@
 
 
     <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery-ui/ui/widgets/datepicker.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/ionicons/ionicons.js"></script>
+    <script src="lib/jquery.maskedinput/jquery.maskedinput.js"></script>
+    <script src="lib/spectrum-colorpicker/spectrum.js"></script>
     <script src="lib/select2/js/select2.min.js"></script>
+    <script src="lib/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="lib/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
+    <script src="lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
+    <script src="lib/pickerjs/picker.min.js"></script>
 
     <script src="js/azia.js"></script>
     <script>
 
       $(function(){
         'use strict'
-        $('#example2').DataTable({
-          // responsive: true,
-          language: {
-            searchPlaceholder: 'Search...',
-            sSearch: '',
-            lengthMenu: '_MENU_ items/page',
-          }
+        // Datepicker
+        $('.fc-datepicker').datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: true
         });
 
-          $('.select2').select2({
-            placeholder: 'Choose one'
-          });
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="form-control" id="field' + next + '" name="field' + next + '" type="text">';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
 
-
-        // Select2
-        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
 
       });
     </script>

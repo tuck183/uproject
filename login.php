@@ -55,7 +55,7 @@
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/ionicons/ionicons.js"></script>
 
-    <script src="../js/azia.js"></script>
+    <script src="js/azia.js"></script>
     <script>
       $(function(){
         'use strict'

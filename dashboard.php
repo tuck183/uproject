@@ -124,7 +124,7 @@
                 <div class="card-body">
                   <div class="card-body-top">
                     <div>
-                      <label class="mg-b-0">Total Mentions</label>
+                      <label class="mg-b-0">Total Impressions</label>
                       <h2>13,956</h2>
                     </div>
                   </div><!-- card-body-top -->
@@ -149,7 +149,7 @@
                 <div class="card-body">
                   <div class="card-body-top">
                     <div>
-                      <label class="mg-b-0">Total Mentions</label>
+                      <label class="mg-b-0">Total Impressions</label>
                       <h2>13,956</h2>
                     </div>
                   </div><!-- card-body-top -->
@@ -173,7 +173,7 @@
                 <div class="card-body">
                   <div class="card-body-top">
                     <div>
-                      <label class="mg-b-0">Total Mentions</label>
+                      <label class="mg-b-0">Total Impressions</label>
                       <h2>13,956</h2>
                     </div>
                   </div><!-- card-body-top -->
@@ -197,7 +197,7 @@
                 <div class="card-body">
                   <div class="card-body-top">
                     <div>
-                      <label class="mg-b-0">Total Mentions</label>
+                      <label class="mg-b-0">Total Impressions</label>
                       <h2>13,956</h2>
                     </div>
                   </div><!-- card-body-top -->
@@ -215,21 +215,21 @@
                       <div class="col-md-12">
           <div class="card card-dashboard-twelve mg-b-20">
             <div class="card-header">
-              <h6 class="card-title">Net Sentiment Over Time</h6>
+              <h6 class="card-title">Total Query Summary</h6>
 
               <div class="sales-overview">
                 <div class="media">
                   <div class="media-icon bg-purple"><i class="typcn typcn-ticket"></i></div>
                   <div class="media-body">
-                    <label>Total Mentions</label>
-                    <h4>3,375</h4>
+                    <label>Total Impressions</label>
+                    <h4>13,375</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
                 <div class="media">
                   <div class="media-icon bg-teal"><i class="typcn typcn-ticket"></i></div>
                   <div class="media-body">
                     <label>Total Number of Tweets</label>
-                    <h4>16,625</h4>
+                    <h4>6,625</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
 

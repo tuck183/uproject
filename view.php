@@ -109,7 +109,7 @@
 
           <div class="row row-sm mg-b-20">
 
-          <div class="card card-dashboard-twelve mg-b-20">
+          <div class="card card-dashboard-twelve mg-b-20 col-md-12">
             <div class="card-header">
               <h6 class="card-title">Nigeria <span>(Abuja)</span></h6>
 
@@ -121,18 +121,12 @@
                     <h4>3,375</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
-                <div class="media">
-                  <div class="media-icon bg-teal"><i class="typcn typcn-ticket"></i></div>
-                  <div class="media-body">
-                    <label>Mentions</label>
-                    <h4>16,625</h4>
-                  </div><!-- media-body -->
-                </div><!-- media -->
+
                 <div class="media">
                   <div class="media-icon bg-primary"><i class="typcn typcn-chart-area-outline"></i></div>
                   <div class="media-body">
-                    <label>Likes</label>
-                    <h4>20,832</h4>
+                    <label>Tweets</label>
+                    <h4>2,832</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
                 <div class="media">
@@ -198,6 +192,16 @@
                     </div><!-- media -->
                     
                   </div><!-- col -->
+             
+             <div class="col-md-12">
+               <p class="mg-b-10">Choose</p>
+              <select class="form-control select2-no-search">
+                <option value="Firefox">By Impressions</option>
+                <option value="Chrome">By Tweets</option>
+              </select>
+            </div>
+
+
                 </div><!-- row -->
               </div><!-- col -->
             </div><!-- row -->

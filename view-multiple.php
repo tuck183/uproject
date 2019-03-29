@@ -107,9 +107,8 @@
 
       <div class="az-content-body">
 
-          <div class="row row-sm mg-b-20">
-
-          <div class="card card-dashboard-twelve mg-b-20">
+          <div class="row row-sm mg-b-10">
+          <div class="card card-dashboard-twelve mg-b-20 col-md-12">
             <div class="card-header">
               <h6 class="card-title">Nigeria <span>(Abuja)</span></h6>
 
@@ -118,23 +117,18 @@
                   <div class="media-icon bg-purple"><i class="typcn typcn-ticket"></i></div>
                   <div class="media-body">
                     <label>Impressions</label>
-                    <h4>3,375</h4>
-                  </div><!-- media-body -->
-                </div><!-- media -->
-                <div class="media">
-                  <div class="media-icon bg-teal"><i class="typcn typcn-ticket"></i></div>
-                  <div class="media-body">
-                    <label>Mentions</label>
-                    <h4>16,625</h4>
+                    <h4>13,375</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
                 <div class="media">
                   <div class="media-icon bg-primary"><i class="typcn typcn-chart-area-outline"></i></div>
                   <div class="media-body">
-                    <label>Likes</label>
-                    <h4>20,832</h4>
+                    <label>Tweets</label>
+                    <h4>2,832</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
+
+
                 <div class="media">
                   <div class="media-body">
                     <label>Context</label>
@@ -145,19 +139,21 @@
             </div><!-- card-header -->
             <div class="card-body">
               <div class="chart-legend">
-                <div><span class="bg-indigo"></span> Nike Mentions</div>
-                <div><span class="bg-danger"></span>Adidas Mentions</div>
+                <div><span class="bg-indigo"></span> Nike Impressions</div>
+                <div><span class="bg-danger"></span>Adidas Impressions</div>
               </div><!-- chart-legend -->
               <div class="chart-wrapper">
                 <div id="flotChart" class="flot-chart"></div>
               </div><!-- chart-wrapper -->
             </div><!-- card-body -->
           </div><!-- card -->
+        </div><!-- row -->
 
 
           <!-- sentiment analysis -->
-          <div class="col-md-7 card card-dashboard-thirteen">
-            <label class="az-content-label">Sentiment Analysis</label>
+            <div class="row row-sm mg-b-10">
+          <div class="col-md-6 mg-b-10 card card-dashboard-thirteen">
+            <label class="az-content-label">Sentiment Analysis - Nike</label>
                         <div class="row mg-t-20 mg-b-20">
               <div class="col-lg-8">
                 <div id="flotPie" class="wd-100p ht-250"></div>
@@ -199,12 +195,80 @@
                     </div><!-- media -->
                     
                   </div><!-- col -->
+                <div class="col-md-12">
+               <p class="mg-b-10">Choose</p>
+              <select class="form-control select2-no-search">
+                <option value="Firefox">By Impressions</option>
+                <option value="Chrome">By Tweets</option>
+              </select>
+            </div>
                 </div><!-- row -->
               </div><!-- col -->
             </div><!-- row -->
           </div><!-- card -->
 
-            <div class="col-lg-5 mg-t-20 mg-lg-t-0">
+        <div class="col-md-6 mg-b-10">
+          <div class="card card-dashboard-thirteen">
+            <label class="az-content-label">Sentiment Analysis - Adidas</label>
+
+            <div class="row mg-t-20 mg-b-20">
+              <div class="col-lg-8">
+                <div id="flotPie1" class="wd-100p ht-250"></div>
+              </div><!-- col -->
+              <div class="col-lg-4 mg-t-40 mg-lg-t-0">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="media">
+                      <div class="media-icon tx-danger">
+                        <i class="icon ion-ios-man"></i>
+                      </div>
+                      <div class="media-body">
+                        <h6>3,890 <span>(26%)</span></h6>
+                        <label>Negative</label>
+                      </div><!-- media-body -->
+                    </div><!-- media -->
+                
+                  </div><!-- col -->
+                  <div class="col-sm-12 mg-t-0 mg-sm-t-0">
+                    <div class="media">
+                      <div class="media-icon tx-success">
+                        <i class="icon ion-ios-man"></i>
+                      </div>
+                      <div class="media-body">
+                        <h6>8,005 <span>(39%)</span></h6>
+                        <label>Positive</label>
+                      </div><!-- media-body -->
+                    </div><!-- media -->
+                  </div><!-- col -->
+                  <div class="col-sm-12 mg-t-0">
+                    <div class="media">
+                      <div class="media-icon tx-warning">
+                        <i class="icon ion-ios-man"></i>
+                      </div>
+                      <div class="media-body">
+                        <h6>2,120 <span>(20%)</span></h6>
+                        <label>Neutral</label>
+                      </div><!-- media-body -->
+                    </div><!-- media -->
+                    
+                  </div><!-- col -->
+
+                <div class="col-md-12">
+               <p class="mg-b-10">Choose</p>
+              <select class="form-control select2-no-search">
+                <option value="Firefox">By Impressions</option>
+                <option value="Chrome">By Tweets</option>
+              </select>
+            </div>
+                </div><!-- row -->
+              </div><!-- col -->
+            </div><!-- row -->
+          </div><!-- card -->
+        </div> <!-- column -->
+
+            
+              <div class="col-lg-12 ">
+                <div class="mg-t-20 mg-lg-t-0">
               <div class="card card-dashboard-twentyfour">
                 <div class="card-header">
                   <h6 class="card-title">Impressions</h6>
@@ -224,6 +288,8 @@
                 </div><!-- card-body -->
               </div>
               </div><!-- card -->
+            </div>
+
             </div><!-- end row -->
 
 
@@ -380,6 +446,25 @@
           legend: { show: false }
         });
 
+        $.plot('#flotPie1', [
+          { label: 'Negative', data: [[1,25]], color: '#dc3545'},
+          { label: 'Positive', data: [[1,38]], color: '#3bb001'},
+          { label: 'Neutral', data: [[1,20]], color: '#ffc107'}
+        ], {
+          series: {
+            pie: {
+              show: true,
+              radius: 1,
+              innerRadius: 0.5,
+              label: {
+                show: true,
+                radius: 3/4,
+                formatter: labelFormatter
+              }
+            }
+          },
+          legend: { show: false }
+        });
         function labelFormatter(label, series) {
           return '<div style="font-size:11px; font-weight:500; text-align:center; padding:2px; color:white;">' + Math.round(series.percent) + '%</div>';
         }

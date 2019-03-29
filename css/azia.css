@@ -49,6 +49,9 @@
 .color-primary {
   color: #3366ff !important;
 }
+.color-danger {
+  color: #dc3545;
+}
 *,
 *::before,
 *::after {
@@ -14905,7 +14908,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5); }
   @media (min-width: 480px) {
     .az-card-signin {
-      border: 1px solid #cdd4e0;
+      border: 1px solid transparent;
       width: 360px;
       padding: 30px 35px; } }
 

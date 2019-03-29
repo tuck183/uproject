@@ -102,10 +102,33 @@
       </div><!-- az-content-header -->
 
      <div class="az-content-body">
+          <div class="az-content-label mg-b-5">Select data type <i class="ion-ios-information-circle" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></div>
+            <div class="row row-sm mg-b-15">
+               
+            <div class="col-lg-3 float-left ">
+              <label class="rdiobox">
+                <input name="rdio" type="radio">
+                <span>Phrase</span>
+              </label>
+            </div><!-- col-3 -->
 
-            <div class="az-content-breadcrumb mg-t-15">
-              <span>Insert Primary Handle</span>
-            </div>
+            <div class="col-lg-3 float-left">
+              <label class="rdiobox">
+                <input name="rdio" type="radio">
+                <span>Handle</span>
+              </label>
+            </div><!-- col-3 -->
+
+            <div class="col-lg-3 float-left">
+              <label class="rdiobox">
+                <input name="rdio" type="radio">
+                <span>Hashtag</span>
+              </label>
+            </div><!-- col-3 -->
+
+          </div><!-- row -->
+
+           <div class="az-content-label mg-b-10">Insert Phrase </div>
             <div class="row row-xs mg-b-10">
               <input type="hidden" name="count" value="1" />
               <div class="col-md-6 control-group" id="fields">
@@ -118,6 +141,22 @@
                   </form>
                 </div>
               </div> <!-- control group -->
+
+
+            <div class="col-md-6">
+                <div class="az-form-group">
+                  <label class="form-label">Context <i class="ion-ios-information-circle" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></label>
+                  
+                  <input type="email" class="form-control" placeholder="" value="">
+                </div><!-- az-form-group -->
+              </div><!-- col -->
+
+            </div> <!-- row -->
+
+            <div class="row row-xs mg-b-20">
+              <label class="ckbox">
+                <input type="checkbox"><span class="az-content-label">Click to update query daily <i class="ion-ios-information-circle" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></span>
+              </label>
             </div> <!-- row -->
 
             <div class="row row-xs mg-b-10">
@@ -161,14 +200,7 @@
             </div><!-- row -->
 
           <div class="row row-sm mg-b-10">
-            <div class="col-md-12">
-                <div class="az-form-group">
-                  <label class="form-label">Context</label>
-            <div class="input-group">
-              <textarea rows="3" class="form-control"></textarea>
-            </div>
-                </div><!-- az-form-group -->
-              </div><!-- col -->
+
           </div>
 
           <div class="row row-xs wd-xl-80p">
@@ -244,6 +276,8 @@
           showOtherMonths: true,
           selectOtherMonths: true
         });
+
+        $('[data-toggle="tooltip"]').tooltip();
 
     var next = 1;
     $(".add-more").click(function(e){

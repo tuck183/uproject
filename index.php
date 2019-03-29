@@ -29,16 +29,55 @@
         <div id="flotChart" class="flot-chart"></div>
       </div><!-- chart-wrapper -->
 
+
+
       <div class="az-home-content">
         <div class="az-logo">Logo</div>
         <h5></h5>
 
-        <h1 class="pd-t-100">Online Sentiment Analysis App</h1>
-        <p class="mg-b-35">Get analysis for different phrases, hashtags or twitter handles</p>
-        <p>
-          <a href="#" data-toggle="modal" data-target="#modaldemo2" class="btn btn-light flex-1 mg-r-10">Login</a>
-          <a href="signup.php" class="btn btn-primary flex-1">Sign Up</a>
-        </p>
+        <div class="row row-sm">
+          <div class="col-md-4">
+            <h1 class="pd-t-100">Online Sentiment Analysis App</h1>
+            <p class="mg-b-35">Get analysis for different phrases, hashtags or twitter handles</p>
+            <p class="col-md-8 pd-0">
+              <a href="#" data-toggle="modal" data-target="#modaldemo2" class="btn btn-light flex-1 mg-r-10">Login</a>
+              <a href="#" data-toggle="modal" data-target="#modaldemo1" class="btn btn-light flex-1 mg-r-10 hidden-sign-up show-sign-up">Sign Up</a>
+            </p>
+            </div><!-- col -->
+
+            <!-- spacer -->
+          <div class="col-md-2"></div>
+
+         <div class="col-md-4 visible-md hide-sign-up">
+              <div class="az-column-signup">
+        <div class="az-signup-header">
+          <h2>Get Started</h2>
+          <h4>It's free to signup and only takes a minute.</h4>
+
+          <form action="dashboard.php">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your fullname">
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" class="form-control" placeholder="Enter your email">
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Organization Name</label>
+              <input type="text" class="form-control" placeholder="Enter the name of your organization">
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Enter your password">
+            </div><!-- form-group -->
+            <button class="btn btn-az-primary btn-block">Create Account</button>
+
+          </form>
+        </div><!-- az-signup-header -->
+      </div><!-- az-column-signup -->
+       </div> <!-- col -->
+      </div> <!-- row -->
       </div><!-- az-home-content -->
     </div><!-- az-home-slider -->
 
@@ -52,6 +91,8 @@
       </div><!-- container -->
     </div><!-- az-footer -->
 
+
+    <!-- start modal -->
     <div id="modaldemo2" class="modal">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content tx-size-sm">
@@ -84,6 +125,48 @@
         </div><!-- az-signin-footer -->
       </div><!-- az-card-signin -->
     </div><!-- az-signin-wrapper -->
+
+          </div><!-- modal-body -->
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+    <!-- start modal -->
+    <div id="modaldemo1" class="modal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content tx-size-sm">
+          <div class="modal-body tx-center pd-y-20 pd-x-20">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          
+          <div class="az-column-signup">
+        <div class="az-signup-header">
+          <h2>Get Started</h2>
+          <h4>It's free to signup and only takes a minute.</h4>
+
+          <form action="dashboard.php">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your fullname">
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" class="form-control" placeholder="Enter your email">
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Organization Name</label>
+              <input type="text" class="form-control" placeholder="Enter the name of your organization">
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Enter your password">
+            </div><!-- form-group -->
+            <button class="btn btn-az-primary btn-block">Create Account</button>
+
+          </form>
+        </div><!-- az-signup-header -->
+      </div><!-- az-column-signup -->
 
           </div><!-- modal-body -->
         </div><!-- modal-content -->

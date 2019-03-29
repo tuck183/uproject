@@ -128,10 +128,11 @@
 
           </div><!-- row -->
 
-           <div class="az-content-label mg-b-10">Insert Phrase </div>
             <div class="row row-xs mg-b-10">
               <input type="hidden" name="count" value="1" />
+
               <div class="col-md-6 control-group" id="fields">
+                  <div class="az-content-label mg-b-10">Insert Phrase </div>
                 <div class=" controls" id="profs">
                   <form class="input-append">
                     <div id="input-group field">
@@ -144,11 +145,8 @@
 
 
             <div class="col-md-6">
-                <div class="az-form-group">
-                  <label class="form-label">Context <i class="ion-ios-information-circle" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></label>
-                  
-                  <input type="email" class="form-control" placeholder="" value="">
-                </div><!-- az-form-group -->
+              <p class="az-content-label mg-b-10">Context (optional)</p>
+              <input type="text" class="form-control" placeholder="" value="">
               </div><!-- col -->
 
             </div> <!-- row -->
@@ -160,28 +158,21 @@
             </div> <!-- row -->
 
             <div class="row row-xs mg-b-10">
-              <div class="col-md-6">
-                <div class="az-form-group">
-                  <label class="form-label">Start Date</label>
-            <div class="input-group">
-              <input type="text" class="form-control fc-datepicker" placeholder="MM/DD/YYYY">
-            </div>
-                </div><!-- az-form-group -->
+
+            <div class="col-md-6">
+              <p class="az-content-label mg-b-10">Start Date</p>
+               <input type="text" class="form-control fc-datepicker" placeholder="MM/DD/YYYY">
               </div><!-- col -->
 
-             <div class="col-md-6">
-                <div class="az-form-group">
-                  <label class="form-label">End Date</label>
-            <div class="input-group">
-              <input type="text" class="form-control fc-datepicker" placeholder="MM/DD/YYYY">
-            </div>
-                </div><!-- az-form-group -->
+            <div class="col-md-6">
+              <p class="az-content-label mg-b-10">End Date</p>
+               <input type="text" class="form-control fc-datepicker" placeholder="MM/DD/YYYY">
               </div><!-- col -->
             </div><!-- row -->
 
           <div class="row row-sm mg-b-20">
             <div class="col-lg-6">
-              <p class="mg-b-10">Select Country</p>
+              <p class="az-content-label mg-b-10">Select Country</p>
               <select class="form-control select2-no-search">
                 <option label="Choose one"></option>
                 <option value="Firefox">Firefox</option>
@@ -191,11 +182,9 @@
               </select>
             </div><!-- col -->
 
-              <div class="col-md-6">
-                <div class="az-form-group">
-                  <label class="form-label">City</label>
-                  <input type="email" class="form-control" placeholder="" value="">
-                </div><!-- az-form-group -->
+            <div class="col-md-6">
+              <p class="az-content-label mg-b-10">City</p>
+              <input type="text" class="form-control" placeholder="" value="">
               </div><!-- col -->
             </div><!-- row -->
 

@@ -113,15 +113,14 @@
             <div class="card-header">
               <h6 class="card-title">Nigeria <span>(Abuja)</span></h6>
 
-              <div class="sales-overview">
+             <div class="sales-overview">
                 <div class="media">
                   <div class="media-icon bg-purple"><i class="typcn typcn-ticket"></i></div>
                   <div class="media-body">
                     <label>Impressions</label>
-                    <h4>3,375</h4>
+                    <h4>13,375</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
-
                 <div class="media">
                   <div class="media-icon bg-primary"><i class="typcn typcn-chart-area-outline"></i></div>
                   <div class="media-body">
@@ -129,12 +128,26 @@
                     <h4>2,832</h4>
                   </div><!-- media-body -->
                 </div><!-- media -->
-                <div class="media">
+
+
+                <div class="media col-md-6">
                   <div class="media-body">
                     <label>Context</label>
                     <p>The total revenue from all events transactions. Depending on your implementation, this can include tax, discounts such as early bird promo.</p>
                   </div><!-- media-body -->
                 </div><!-- media -->
+
+                <div class="media col-md-3">
+                  <div class="media-body">
+              <select class="form-control select2-no-search">
+                <option value="Firefox">All</option>
+                <option value="Chrome">Positive</option>
+                <option value="Chrome">Negative</option>
+                <option value="Chrome">Neutral</option>
+              </select>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+
               </div><!-- sales-overview -->
             </div><!-- card-header -->
             <div class="card-body">
@@ -150,7 +163,7 @@
 
           <!-- sentiment analysis -->
           <div class="col-md-7 card card-dashboard-thirteen">
-            <label class="az-content-label">Sentiment Analysis</label>
+            <label class="az-content-label">Tweet Sentiment Analysis - #Brexit</label>
                         <div class="row mg-t-20 mg-b-20">
               <div class="col-lg-8">
                 <div id="flotPie" class="wd-100p ht-250"></div>
@@ -192,16 +205,6 @@
                     </div><!-- media -->
                     
                   </div><!-- col -->
-             
-             <div class="col-md-12">
-               <p class="mg-b-10">Choose</p>
-              <select class="form-control select2-no-search">
-                <option value="Firefox">By Impressions</option>
-                <option value="Chrome">By Tweets</option>
-              </select>
-            </div>
-
-
                 </div><!-- row -->
               </div><!-- col -->
             </div><!-- row -->

@@ -13,9 +13,6 @@
 /* ############### BOOTSTRAP FRAMEWORK ############### */
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
   --blue: #3366ff;
@@ -51,6 +48,10 @@
 }
 .color-danger {
   color: #dc3545;
+}
+
+.bg-white {
+  background: #ffffff;
 }
 *,
 *::before,
@@ -466,18 +467,66 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+  .visible-md {
+    display: block !important;
+  }
+  .hidden-sign-up {
+    display: none !important;
+  }
+  @media (min-width: 360px) {
+
+      .show-sign-up {
+        display: block !important;
+      }
+      .hide-sign-up {
+        display: none !important;
+      }
+
+    }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 540px; } 
+      .show-sign-up {
+        display: block !important;
+      }
+      .hide-sign-up {
+        display: none !important;
+      }
+
+    }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 720px; } 
+      .show-sign-up {
+        display: block !important;
+      }
+      .hide-sign-up {
+        display: none !important;
+      }
+    }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 960px; } 
+      .show-sign-up {
+        display: block !important;
+      }
+      .hide-sign-up {
+        display: none !important;
+      }
+
+    }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1140px; } 
+  .visible-md {
+    display: block !important;
+  }
+  .hidden-sign-up {
+    display: none !important;
+  }
+
+    }
 
 .container-fluid {
   width: 100%;
@@ -12333,7 +12382,9 @@ body {
   left: 20px;
   z-index: 5;
   color: rgba(255, 255, 255, 0.7);
-  right: 20px; }
+  right: 20px; 
+  width: 100% !important;
+}
   @media (min-width: 576px) {
     .az-home-content {
       top: 40px;

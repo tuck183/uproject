@@ -28,7 +28,7 @@
 
     <div class="az-sidebar az-sidebar-sticky az-sidebar-indigo-dark">
       <div class="az-sidebar-header">
-        <a href="index.html" class="az-logo">logo</a>
+        <a href="index.php" class="az-logo">logo</a>
       </div><!-- az-sidebar-header -->
       <div class="az-sidebar-loggedin">
         <div class="az-img-user online"><img src="img/img1.jpg" alt=""></div>
@@ -129,12 +129,24 @@
                 </div><!-- media -->
 
 
-                <div class="media">
+                <div class="media col-md-6">
                   <div class="media-body">
                     <label>Context</label>
                     <p>The total revenue from all events transactions. Depending on your implementation, this can include tax, discounts such as early bird promo.</p>
                   </div><!-- media-body -->
                 </div><!-- media -->
+
+                <div class="media col-md-3">
+                  <div class="media-body">
+              <select class="form-control select2-no-search">
+                <option value="Firefox">All</option>
+                <option value="Chrome">Positive</option>
+                <option value="Chrome">Negative</option>
+                <option value="Chrome">Neutral</option>
+              </select>
+                  </div><!-- media-body -->
+                </div><!-- media -->
+
               </div><!-- sales-overview -->
             </div><!-- card-header -->
             <div class="card-body">
@@ -153,7 +165,7 @@
           <!-- sentiment analysis -->
             <div class="row row-sm mg-b-10">
           <div class="col-md-6 mg-b-10 card card-dashboard-thirteen">
-            <label class="az-content-label">Sentiment Analysis - Nike</label>
+            <label class="az-content-label">Tweet Sentiment Analysis - Nike</label>
                         <div class="row mg-t-20 mg-b-20">
               <div class="col-lg-8">
                 <div id="flotPie" class="wd-100p ht-250"></div>
@@ -195,13 +207,7 @@
                     </div><!-- media -->
                     
                   </div><!-- col -->
-                <div class="col-md-12">
-               <p class="mg-b-10">Choose</p>
-              <select class="form-control select2-no-search">
-                <option value="Firefox">By Impressions</option>
-                <option value="Chrome">By Tweets</option>
-              </select>
-            </div>
+
                 </div><!-- row -->
               </div><!-- col -->
             </div><!-- row -->
@@ -209,7 +215,7 @@
 
         <div class="col-md-6 mg-b-10">
           <div class="card card-dashboard-thirteen">
-            <label class="az-content-label">Sentiment Analysis - Adidas</label>
+            <label class="az-content-label">Tweet Sentiment Analysis - Adidas</label>
 
             <div class="row mg-t-20 mg-b-20">
               <div class="col-lg-8">
@@ -253,13 +259,6 @@
                     
                   </div><!-- col -->
 
-                <div class="col-md-12">
-               <p class="mg-b-10">Choose</p>
-              <select class="form-control select2-no-search">
-                <option value="Firefox">By Impressions</option>
-                <option value="Chrome">By Tweets</option>
-              </select>
-            </div>
                 </div><!-- row -->
               </div><!-- col -->
             </div><!-- row -->
@@ -271,7 +270,7 @@
                 <div class="mg-t-20 mg-lg-t-0">
               <div class="card card-dashboard-twentyfour">
                 <div class="card-header">
-                  <h6 class="card-title">Impressions</h6>
+                  <h6 class="card-title">Total Impressions</h6>
                   <span>This Week</span>
                 </div><!-- card-header -->
                 <div class="card-body">

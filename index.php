@@ -245,5 +245,4 @@
     </script>
   </body>
 
-<!-- Mirrored from themepixels.me/demo/azia/v1.1/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Mar 2019 22:33:06 GMT -->
 </html>
